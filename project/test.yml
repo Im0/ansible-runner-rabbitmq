@@ -1,0 +1,9 @@
+---
+- name: Test playbook
+  gather_facts: no
+  hosts: localhost
+  tasks:
+
+  - name: Execute debug command
+    debug:
+      msg: "Hello world {{ msg }}"
